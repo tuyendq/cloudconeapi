@@ -13,5 +13,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuyendq/cloudconeapi.git"
   }
 }

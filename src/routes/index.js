@@ -26,8 +26,9 @@ router.get('/:id/info', function(req, res, next) {
       console.log('headers:', response.headers);
 
       response.on('data', (d) => {
-        res.json(d);
-        process.stdout.write(d);
+        //process.stdout.write(d);
+        console.log(d.toString());
+        res.status(response.statusCode).send(d.toString());
       });
     });
 
